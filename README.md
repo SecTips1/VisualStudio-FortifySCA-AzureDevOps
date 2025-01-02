@@ -157,6 +157,7 @@ steps:
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: 'FortifyResults'
+
 When pushed to Azure DevOps, this pipeline will:
 
 Restore and build your solution.
