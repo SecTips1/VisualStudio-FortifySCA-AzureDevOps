@@ -159,7 +159,7 @@ steps:
     artifactName: 'FortifyResults'
 
 ```
-
+#
 When pushed to Azure DevOps, this pipeline will:
 
 Restore and build your solution.
@@ -176,12 +176,12 @@ Open FPR File
 Use Fortify Audit Workbench or Fortify Extension in Visual Studio to view identified security issues.
 Remediate and Re-scan
 
-# Fix vulnerabilities in your code, commit/push, and the pipeline will rerun to validate fixes.
+Fix vulnerabilities in your code, commit/push, and the pipeline will rerun to validate fixes.
 (Optional) Fortify Software Security Center
 
 Upload the .fpr to Fortify SSC for centralized tracking, reporting, and integration with bug tracking systems (like Azure DevOps Work Items).
 
-Additional Tips and Best Practices
+# Additional Tips and Best Practices
 
 Incremental Scans: Reuse the same build ID (-b MyProjectBuild) to enable incremental analysis and reduce scan times for large projects.
 
