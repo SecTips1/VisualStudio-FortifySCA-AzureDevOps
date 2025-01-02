@@ -193,5 +193,5 @@ Automate Bug Tracking: Integrate Fortify SSC with Azure DevOps Work Items for au
 
 Document Your Pipeline: Add comments in your YAML file or pipeline definition so that teammates can easily maintain and update the process.
 
-Congratulations! You’ve successfully integrated Microsoft Visual Studio, Fortify SCA, and Azure DevOps. If you encounter any issues, consult the official Fortify (OpenText) documentation, Microsoft docs, or your organization’s security team.
+You should have successfully integrated Microsoft Visual Studio, Fortify SCA, and Azure DevOps. If you encounter any issues, consult the official Fortify (OpenText) documentation, Microsoft docs, or your organization’s application and/or security team.
 
