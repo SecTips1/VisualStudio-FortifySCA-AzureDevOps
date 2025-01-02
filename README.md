@@ -157,34 +157,3 @@ steps:
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: 'FortifyResults'
-
-When pushed to Azure DevOps, this pipeline will:
-
-Restore and build your solution.
-Perform Fortify translation.
-Run the Fortify scan, generating an FPR file.
-Publish the FPR file as a build artifact.
-View and Manage Fortify Results
-Download the Artifacts
-
-After the pipeline completes, open the Build Summary and navigate to Artifacts.
-Download the FortifyResults artifact containing the .fpr file.
-Open FPR File
-
-Use Fortify Audit Workbench or Fortify Extension in Visual Studio to view identified security issues.
-Remediate and Re-scan
-
-Fix vulnerabilities in your code, commit/push, and the pipeline will rerun to validate fixes.
-(Optional) Fortify Software Security Center
-
-Upload the .fpr to Fortify SSC for centralized tracking, reporting, and integration with bug tracking systems (like Azure DevOps Work Items).
-Additional Tips and Best Practices
-Incremental Scans: Reuse the same build ID (-b MyProjectBuild) to enable incremental analysis and reduce scan times for large projects.
-Secure Variables: Store any sensitive configuration or credentials in Azure DevOps Secure Variables or Azure Key Vault.
-Regular Updates: Keep Visual Studio, Fortify SCA, Azure DevOps Agents, and Fortify Tasks updated.
-Automate Bug Tracking: Integrate Fortify SSC with Azure DevOps Work Items for automatic bug creation on critical vulnerabilities.
-Document Your Pipeline: Add comments in your YAML file or pipeline definition so that teammates can easily maintain and update the process.
-
-
-Congratulations! You’ve successfully integrated Microsoft Visual Studio, Fortify SCA, and Azure DevOps. If you encounter any issues, consult the official Fortify (OpenText) documentation, Microsoft docs, or your organization’s security team.
-
